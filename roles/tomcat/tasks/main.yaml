@@ -35,7 +35,7 @@
     path: /opt/tomcat/conf/*
     usr: tomcat
     mode: "g+r"
-    recursive: yes
+    recurse: yes
 
 - name: setting up systemd file for tomcat
   template:
