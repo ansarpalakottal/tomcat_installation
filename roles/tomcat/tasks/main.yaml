@@ -20,7 +20,7 @@
     dest: /tmp
 
 - name: installing tomcat
-  shell: cd /tmp && sudo tar -zxvf apache-tomcat-8.0.33.tar.gz -C /opt/tomcat --strip-components=1
+  shell: cd /tmp && sudo tar -zxvf apache-tomcat-8.0.47.tar.gz -C /opt/tomcat --strip-components=1
 
 - name: setting permissions
   file: 
