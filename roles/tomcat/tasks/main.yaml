@@ -16,6 +16,7 @@
 
 - name: downloading tomcat
   get_url: url=http://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.33/bin/apache-tomcat-8.0.33.tar.gz
+  dest: ./
 
 - name: installing tomcat
   command: sudo tar -zxvf apache-tomcat-8.0.33.tar.gz -C /opt/tomcat --strip-components=1
