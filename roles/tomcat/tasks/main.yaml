@@ -11,7 +11,7 @@
 #  file: path=/opt/tomcat state=directory
 
 - name: creating the user for Apache tomcat
-  user: name=tomcat shell=/bin/nologin group=tomcat createhome={{ home }}
+  user: name=tomcat shell=/bin/nologin group=tomcat home={{ home }}
   become: true
 
 - name: downloading tomcat
