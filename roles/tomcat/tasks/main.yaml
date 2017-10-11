@@ -12,6 +12,7 @@
 
 - name: creating the user for Apache tomcat
   user: name=tomcat shell=/bin/nologin group=tomcat createhome={{ home }}
+  become: true
 
 - name: downloading tomcat
   get_url: url=http://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.33/bin/apache-tomcat-8.0.33.tar.gz
