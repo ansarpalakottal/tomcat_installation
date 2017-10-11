@@ -44,6 +44,4 @@
 
 - name: starting apache tomcat
   service: name=tomcat state=started
-
-
-
+  become: true
