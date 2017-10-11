@@ -33,7 +33,7 @@
 
   file:
     path: /opt/tomcat/conf/*
-    usr: tomcat
+    user: tomcat
     mode: "g+r"
     recurse: yes
 
